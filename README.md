@@ -17,10 +17,10 @@ version: "1.0.0"
 ### 手动执行一次扫描
 
 ```bash
-bash gitsearch/monitor.sh
+bash monitor.sh
 ```
 
-- 有新仓库 → 输出 Markdown 报告（同时写入 `gitsearch/.latest_new.md`）
+- 有新仓库 → 输出 Markdown 报告（同时写入 `.latest_new.md`）
 - 无新仓库 → 静默退出（exit code 1）
 
 ### 设置每小时自动监控
@@ -31,7 +31,7 @@ bash gitsearch/monitor.sh
 
 ### 自定义关键词
 
-编辑 `gitsearch/monitor.sh` 中的 `KEYWORDS` 数组即可增删关键词。
+编辑 `monitor.sh` 中的 `KEYWORDS` 数组即可增删关键词。
 
 ## 状态文件
 
